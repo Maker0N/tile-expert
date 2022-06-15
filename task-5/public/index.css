@@ -1,0 +1,38 @@
+body {
+  min-height: 100vh;
+  font-size: 20px;
+}
+
+#root {
+  text-align: center;
+}
+
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div:not(#root) {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  transition: transform 0.5s, background-color 0.5s;
+  cursor: pointer;
+}
+
+.active {
+  transform: scale(0.9);
+  background-color: lightgray;
+}
+
+img {
+  display: block;
+}
+
+address,
+p {
+  margin-bottom: 0;
+}
